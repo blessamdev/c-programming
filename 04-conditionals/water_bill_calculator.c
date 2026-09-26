@@ -26,7 +26,8 @@ int main(){
 		totalbill = numberofwaterunits * 20;
 	}
 	
-	printf("Total bill: Kshs %.2f.\n",totalbill);
+	printf("Units of water consumed: %.2f.\n",numberofwaterunits);
+	printf("Total water bill: %.2f KES.\n",totalbill);
 	
 	return 0;
 	
