@@ -23,35 +23,40 @@ int main(){
 	
 	switch(option){
 	case 1:
-        printf("Your current balance is KSHS%d",balance);
-		break;
+    printf("Your current balance is KSHS%d",balance);
+	break;
 	case 2:
-		printf("2. Deposit Money. \n");
-		
-		printf(" Enter amount to deposit.\n");
-		scanf("%d",&deposit_money);
-		
-		balance = balance + deposit_money;
-		
-		printf("Deposit of Ksh %d.\t",deposit_money);
-		printf("Updated Balance: Ksh %d.\t",balance);
-		break;
+    printf("2. Deposit Money.\n");
+
+    printf("Enter amount to deposit.\n");
+    scanf("%d", &deposit_money);
+
+    if(deposit_money > 0){
+        balance = balance + deposit_money;
+
+        printf("Deposit of Ksh %d successful.\n", deposit_money);
+        printf("Updated Balance: Ksh %d.\n", balance);
+    }
+    else{
+        printf("Invalid deposit amount.\n");
+    }
+    break;
 	case 3:
-	    printf("3. Withdraw Money. \n");
-	    
-		printf("Enter amount to withdraw.\n");
-		scanf("%d",&withdrawal_money);
-		
-		balance = balance - withdrawal_money;
-		
-		if(withdrawal_money <= balance){
-			printf("Withdrawal of KSHS %d successful.\n",withdrawal_money);
-			printf("New balance: Kshs %d.\n",balance);
-		}
-        else{
-		    printf("Insufficient funds.\n");
-		}
-	    break;
+    printf("3. Withdraw Money. \n");
+
+    printf("Enter amount to withdraw.\n");
+    scanf("%d", &withdrawal_money);
+
+    if(withdrawal_money <= balance){
+        balance = balance - withdrawal_money;
+
+        printf("Withdrawal of KSHS %d successful.\n", withdrawal_money);
+        printf("New balance: Kshs %d.\n", balance);
+    }
+    else{
+        printf("Insufficient funds.\n");
+    }
+    break;
 	case 4:
 		printf("4. Exit. \n");
 		break;
