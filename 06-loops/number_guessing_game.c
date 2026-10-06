@@ -1,3 +1,13 @@
+/*
+  Author: Blessam
+  Date: October 6, 2026
+  Description: An interactive number guessing game that generates a random secret 
+               number between 1 and 20. It prompts the user for guesses using a 
+               loop, provides "Too high" or "Too low" feedback with input validation, 
+               and tracks the total number of valid attempts until the correct guess is made.
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -18,10 +28,10 @@ int main() {
         // 1. Input Validation Check
         if (guess < 1 || guess > 20) {
             printf("Invalid input! Please enter a number between 1 and 20.\n\n");
-            continue; // Skip the attempt count and high/low logic, restart loop
+            continue;
         }
 
-        attempts++; // Increment attempts ONLY for valid guesses
+        attempts++;
 
         // 2. High / Low / Correct Decision Logic
         if (guess > secret) {
