@@ -8,7 +8,7 @@ Date: 18th September 2026
 #define PI 3.142   //Defining the value of PI constant
 
 int main(){
-	float radius;  //Declaring the variables
+	float radius;  //Declaring the variables in the program
 	float height;  //Declaring the variables
 	float volume;  //Declaring the variables
 	float surfacearea;  //Declaring the variables
