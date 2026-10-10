@@ -22,7 +22,7 @@ int main() {
     printf("Enter your phone number: ");
     scanf("%19s", phone_number);
 
-    printf("\n--- User Details ---\n");
+    printf("\n--- User Details. ---\n");
     printf("Height: %.2f meters\n", height);
     printf("Bank Balance: Ksh %.2f\n", bank_balance);
     printf("Phone Number: %s\n", phone_number);
