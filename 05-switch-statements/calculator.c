@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-int main(){
+int main(){  // variable declaration
 	
 	int first_number;
-	char operator;
-	int second_number;
-	int output;
+	char operator;  //operator variable to store the operator
+	int second_number;  // variable to store the second number
+	int output;   // variable to store the output of the operation
 	
-	printf("Enter the First Number.\n");
-	scanf("%d",&first_number);
+	printf("Enter the First Number.\n");  // prompt the user to enter the first number
+	scanf("%d",&first_number);  // read the first number from the user input
 	
-	printf("Enter the Operator.\n");
+	printf("Enter the Operator.\n"); // prompt the user to enter the operator
 	scanf(" %c", &operator);
 	
 	printf("Enter the Second Number.\n");
