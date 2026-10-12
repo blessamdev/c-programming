@@ -19,6 +19,10 @@ int main(){
     printf("The temperature in Fahrenheit is: \n");
     scanf("%f", &fahrenheit_value);
 
+    printf("The temperature in Celcius is: \n");
+    scanf("%f", &celsius_value);
+
+
     celsius_value = celcius(fahrenheit_value);
     printf("The temperature in Celsius = %.2f\n", celsius_value);
     printf("The temperature in Fahrenheit = %.2f\n", fahrenheit(celsius_value));
