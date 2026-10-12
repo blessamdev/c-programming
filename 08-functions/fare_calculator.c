@@ -16,6 +16,12 @@ int main() {
 
     printf("Enter the distance that you traveled in kilometers: \t");
     scanf("%d", &distance);
-    printf("The total fare for the travelled distance is: %d\n", fare_calculator(distance));
+
+    if(distance < 0){
+        printf("The distance cannot be -ve. Please enter a valid distance.\n");
+    }
+    else{
+        printf("Total fare for the travelled distance is: %d\n", fare_calculator(distance));
+    }
     return 0;
 }
