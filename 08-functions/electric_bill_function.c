@@ -12,9 +12,9 @@ double calculateElectricBills(int units) {
     if (units <= 100) {
         billAmount = units * 10; // KSh. 10 per unit for the first 100 units
     }else if(units <= 200){
-        billAmount = units * 15; // KSh. 15 per unit for the next 100 units
+        billAmount = (100 * 10) + ((units - 100)) * 15;
     }else{
-        billAmount = units * 20; // KSh. 20 per unit for units above 200
+        billAmount = (100 * 10) + (100 * 15) + ((units - 200)) * 20;
     }
 
     return billAmount;
