@@ -14,10 +14,14 @@ float fahrenheit(float celcius){
 }
 
 int main(){
-    float fahrenheit, celcius;
+    float fahrenheit_value, celsius_value;
+
     printf("The temperature in Fahrenheit is: \n");
-    scanf("%f", &fahrenheit);
-    printf("The temperature in Celsius = %.2f\n", celcius(fahrenheit));
-    printf("The temperature in Fahrenheit = %.2f\n",fahrenheit(celcius));
+    scanf("%f", &fahrenheit_value);
+
+    celsius_value = celcius(fahrenheit_value);
+    printf("The temperature in Celsius = %.2f\n", celsius_value);
+    printf("The temperature in Fahrenheit = %.2f\n", fahrenheit(celsius_value));
+
     return 0;
 }
