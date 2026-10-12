@@ -8,7 +8,9 @@ int max(int a, int b, int c) {
 }
 int factorial(int n) {
     int result = 1;
-    for (int i = 1; i <= n; i++) {
+    int i;
+
+    for (i = 1; i <= n; i++) {
         result = result * i;
     }
     return result;
