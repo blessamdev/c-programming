@@ -13,7 +13,8 @@ printf("Mission: Master C Programming\n");
 printf("Current : Learning Functions and Control Structures\n");
 printf("Destination: Building real-world projects\n");
 
-printf("Status: THE JOURNEY HAS JUST BEGUN!\n");
+printf("Status: THE JOURNEY HAS JUST BEGUN!\n\n");
+
 printf("===============================\n");
 
 return 0;
