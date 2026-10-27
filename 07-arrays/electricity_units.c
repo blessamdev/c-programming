@@ -1,6 +1,6 @@
 /*
 Author: Samuel Owino Bless
-Date: 10/2/2026
+Date: 10/2/2026.
 */
 
 #include <stdio.h>
